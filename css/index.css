@@ -34,6 +34,7 @@ html , body{
 	}
 }
 /*page bg*/
+
 .page{height: 100%; width: 100%; position: absolute; } 
 .page > .bg{position: absolute; height: 100%; width: 100%; z-index: -1; } 
 #page1{
@@ -44,7 +45,7 @@ html , body{
 	background-size: 100%;
 }
 #page1 > .p1_lantern{color:#fff; width: 45vw; height: 71.2vh; font-size: 3.506rem; position: absolute; top:0; right: 0; left: 0; margin: auto; background: url(../images/p1_lantern.png); background-size: 100%; padding-top: 31vh; text-align: center; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing: border-box; } 
-#page1 > .p1_lantern:before{content: ""; position: absolute; top: -4%; right: 0; bottom: 0; left: 0; margin: auto; z-index: -1; width: 30vw; height: 30vw; background: #d60b3b; opacity: 0.5; border-radius: 50%; -webkit-box-shadow: 0 0 10vw 10vw #d60b3b; -moz-box-shadow: 0 0 10vw 10vw #d60b3b; -ms-box-shadow: 0 0 10vw 10vw #d60b3b; -o-box-shadow: 0 0 10vw 10vw #d60b3b; box-shadow: 0 0 10vw 10vw #d60b3b;
+#page1 > .p1_lantern:before{content: ""; position: absolute; top: -2%; right: 0; bottom: 0; left: 0; margin: auto; z-index: -1; width: 30vw; height: 30vw; background: #d60b3b; opacity: 0.5; border-radius: 50%; -webkit-box-shadow: 0 0 10vw 10vw #d60b3b; -moz-box-shadow: 0 0 10vw 10vw #d60b3b; -ms-box-shadow: 0 0 10vw 10vw #d60b3b; -o-box-shadow: 0 0 10vw 10vw #d60b3b; box-shadow: 0 0 10vw 10vw #d60b3b;
 	-webkit-animation:p1_lantern .5s infinite alternate;
 			animation:p1_lantern .5s infinite alternate;
 } 
