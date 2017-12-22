@@ -178,6 +178,7 @@ html , body{
 }
 #page2 > .p2_2016{position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; background: url(../images/p2_2018.png) no-repeat center center; background-size: 100%; width: 27.5vw; height: 6.24vh; }
 #page3{display: none;
+	width: 100%;
 	-webkit-transition:.5s;
 			transition:.5s;
 }
@@ -185,7 +186,8 @@ html , body{
 	-webkit-transform:translate(0,-100%);
 			transform:translate(0,-100%);
 }
-#page3 > .bg{background: url("../images/p3_bg.jpg") no-repeat center center; background-size: contain; } 
+#page3 > .bg{width: 100%;
+	background: url("../images/p3_bg1.jpg") no-repeat center center; background-size: 100%; } 
 #page3 > .p3_logo{width: 41.625vw; height: 13.5vw; position: absolute; top: 7.82vh; right: 0; left: 0; background: url(../images/p3_logo.png) no-repeat center center; background-size: 100%； } 
 #page3 > .p3_title{width: 48.125vw; height: 50vh; position: absolute; top: 21vh; right: 0; left: 0; margin: auto; background:url(../images/p3_title2.png) no-repeat center center; background-size: 100%; } 
 #page3 > .p3_second{position: absolute; width: 22.8125vw; height: 41.625vh; top: 25.48vh; left: 3.75vw; background: url(../images/p3_couplet_second.png) no-repeat center center; background-size:100%; } 
