@@ -1,4 +1,40 @@
 window.onload=function(){
+	// 图片预加载
+	var imgs = [
+		'images/lib.png',
+		'images/music_pointer.png',
+		'images/music_disc.png',
+		'images/p1_bg.jpg',
+		'images/p1_lantern.png',
+		'images/p1_imooc.png',
+		'images/p2_bg.jpg',
+		'images/p2_circle_outer.png',
+		'images/p2_circle_middle.png',
+		'images/p2_circle_inner.png',
+		'images/p2_2018.png',
+		'images/p3_logo.png',
+		'images/p3_title2.png',
+		'images/p3_couplet_second.png',
+		'images/p3_couplet_first.png',
+		'images/p3_blessing.png'
+	];
+	var index = 0,
+	len = imgs.length,
+	count = 0,
+	$progress = $('.progress');
+
+	$.each(imgs,function(i,src){
+		var imgObj = new Image();
+		$(imgObj).on('load error',function(){
+			$progress.html('加载中' + Math.round((count + 1) / len * 100) + '%...');
+			if(count >= len - 1){
+				$('#loading').hide();
+			}
+			count++;
+		});
+		imgObj.src = src;
+	});
+
 
 	console.log("网页可见区域宽：" + document.body.clientWidth);
 	console.log("网页可见区域高：" + document.body.clientHeight);
@@ -58,4 +94,5 @@ window.onload=function(){
 			page3.setAttribute("class","page fadeIn")
 		},5500)
 	},false);
+
 };
