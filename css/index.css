@@ -1,6 +1,7 @@
 /*all tag*/
-*{margin: 0; padding: 0; border: none; font-size:1.5625vw; font-family: "Microsoft YaHei"; } 
+*{margin: 0; padding: 0; border: none; font-family: "Microsoft YaHei"; } 
 html , body{
+	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
@@ -297,4 +298,19 @@ html , body{
 	}
 }
 
-
+#loading{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	font-size: 6vw;
+	font-weight: 700;
+	z-index: 10;
+}
+.progress{
+	margin-top: 80%;
+}
